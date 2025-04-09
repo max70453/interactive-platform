@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+    <head>
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Профориентация, тесты, карьера">
+		<meta name="description" content="Тесты по профориентации для определения профессиональных склонностей">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+		<title>Тесты по профориентации | ПрофСтарт</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		
+		<!-- Web Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Nice Select CSS -->
+        <link rel="stylesheet" href="css/niceselect.css">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/cube-portfolio.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        <!-- Magnific Popup -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- Newsletter CSS -->
+		<link rel="stylesheet" href="css/newsletter.css">
+		
+		<!-- Eduland Stylesheet -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+		<!-- Eduland Colors -->
+		<link rel="stylesheet" href="css/colors/color1.css">
+
+        <!-- Стили для тестов -->
+        <style>
+            .test-container {
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            }
+            .test-question {
+                margin-bottom: 20px;
+                padding: 15px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            }
+            .test-options label {
+                display: block;
+                margin: 10px 0;
+                padding: 10px 15px;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            .test-options label:hover {
+                background-color: #e9e9e9;
+            }
+            .test-options input[type="radio"] {
+                margin-right: 10px;
+            }
+            .test-button {
+                margin-top: 20px;
+            }
+            .result-container {
+                display: none;
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 30px;
+                margin-top: 30px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+            .result-title {
+                color: #2BA0C9;
+                margin-bottom: 20px;
+            }
+            .result-description {
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+            .profession-list {
+                margin-top: 20px;
+            }
+            .profession-item {
+                background-color: #f5f5f5;
+                padding: 15px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border-left: 4px solid #2BA0C9;
+            }
+            .test-progress {
+                height: 10px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+            }
+            .test-progress-bar {
+                background-color: #2BA0C9;
+                height: 100%;
+                width: 0%;
+                transition: width 0.3s ease;
+            }
+            .test-tabs {
+                margin-bottom: 30px;
+            }
+            .test-tabs .nav-link {
+                color: #333;
+                font-weight: 500;
+            }
+            .test-tabs .nav-link.active {
+                color: #2BA0C9;
+                background-color: #f9f9f9;
+                border-bottom: 3px solid #2BA0C9;
+            }
+            .test-intro {
+                margin-bottom: 30px;
+            }
+            .saved-results {
+                margin-top: 40px;
+            }
+            .saved-result-item {
+                background-color: #f9f9f9;
+                padding: 15px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border-left: 4px solid #2BA0C9;
+            }
+            .saved-result-date {
+                color: #777;
+                font-size: 0.9em;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+	
+	<!-- Header -->
+	<header class="header">
+		<!-- Header Inner -->
+		<div class="header-inner overlay">
+			<div class="container">
+				<div class="row" style="display: flex; align-items: center;">
+					<div class="col-lg-3 col-md-3 col-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html" style="color: blue;"><img src="./images/logo-new.png" alt="#">ПрофСтарт</a>
+						</div>
+						<!--/ End Logo -->
+						<div class="mobile-menu"></div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-12">
+						<div class="menu-bar">
+							<nav class="navbar navbar-default">
+								<div class="navbar-collapse">
+									<!-- Main Menu -->
+									<ul id="nav" class="nav menu navbar-nav">
+										<li><a href="index.html"><i class="fa fa-home"></i>Главная</a></li>
+										<li><a href="events.html"><i class="fa fa-clone"></i>Мероприятия</a></li>
+										<li class="active"><a href="tests.html"><i class="fa fa-check-square-o"></i>Тесты</a></li>
+										<li><a href="about.html"><i class="fa fa-info-circle"></i>О нас</a></li>
+										<li><a href="contact.html"><i class="fa fa-address-book"></i>Контакты</a></li>
+									</ul>
+									<!-- End Main Menu -->
+								</div> 
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	
+	<!-- Breadcrumb -->
+	<div class="breadcrumbs overlay" style="background-image:url('images/breadcrumb-bg.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<div class="breadcrumb-inner">
+						<h1 class="page-title">Тесты по профориентации</h1>
+						<ul class="bread-list">
+							<li><a href="index.html">Главная</a></li>
+							<li><i class="fa fa-angle-right"></i>Тесты</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Breadcrumb -->
+
+    <!-- Tests Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="section-title bg">
+                        <h2>Определите свой профессиональный путь</h2>
+                        <p>Пройдите наши тесты, чтобы узнать свои сильные стороны и подходящие профессии</p>
+                        <div class="icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="test-intro">
+                        <p>Наши тесты помогут вам определить свои профессиональные склонности, личностные качества и предпочтения. На основе результатов вы получите рекомендации по выбору профессии и направления обучения.</p>
+                        <p>Выберите один из тестов ниже и следуйте инструкциям. Результаты будут сохранены в вашем браузере, и вы сможете вернуться к ним в любое время.</p>
+                    </div>
+
+                    <!-- Test Tabs -->
+                    <ul class="nav nav-tabs test-tabs" id="testTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="personality-tab" data-toggle="tab" href="#personality" role="tab">Личностный тест</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab">Профессиональные склонности</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab">Тест навыков</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="results-tab" data-toggle="tab" href="#saved-results" role="tab">Мои результаты</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="testTabsContent">
+                        <!-- Personality Test -->
+                        <div class="tab-pane fade show active" id="personality" role="tabpanel">
+                            <div class="test-container" id="personality-test">
+                                <h3>Тест на определение типа личности</h3>
+                                <p>Этот тест поможет определить ваш тип личности и подходящие профессиональные направления.</p>
+                                
+                                <div class="test-progress">
+                                    <div class="test-progress-bar" id="personality-progress"></div>
+                                </div>
+                                
+                                <div id="personality-questions"></div>
+                                
+                                <button class="btn btn-primary test-button" id="personality-next">Далее</button>
+                                <button class="btn btn-success test-button" id="personality-submit" style="display: none;">Завершить тест</button>
+                            </div>
+                            
+                            <div class="result-container" id="personality-result">
+                                <h3 class="result-title">Результаты теста личности</h3>
+                                <div id="personality-result-content"></div>
+                                <button class="btn btn-primary" id="personality-save-result">Сохранить результаты</button>
+                                <button class="btn btn-secondary" id="personality-restart">Пройти тест заново</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Professional Inclinations Test -->
+                        <div class="tab-pane fade" id="professional" role="tabpanel">
+                            <div class="test-container" id="professional-test">
+                                <h3>Тест на профессиональные склонности</h3>
+                                <p>Этот тест поможет определить ваши профессиональные склонности и интересы.</p>
+                                
+                                <div class="test-progress">
+                                    <div class="test-progress-bar" id="professional-progress"></div>
+                                </div>
+                                
+                                <div id="professional-questions"></div>
+                                
+                                <button class="btn btn-primary test-button" id="professional-next">Далее</button>
+                                <button class="btn btn-success test-button" id="professional-submit" style="display: none;">Завершить тест</button>
+                            </div>
+                            
+                            <div class="result-container" id="professional-result">
+                                <h3 class="result-title">Результаты теста профессиональных склонностей</h3>
+                                <div id="professional-result-content"></div>
+                                <button class="btn btn-primary" id="professional-save-result">Сохранить результаты</button>
+                                <button class="btn btn-secondary" id="professional-restart">Пройти тест заново</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Test -->
+                        <div class="tab-pane fade" id="skills" role="tabpanel">
+                            <div class="test-container" id="skills-test">
+                                <h3>Тест на определение навыков</h3>
+                                <p>Этот тест поможет определить ваши сильные стороны и навыки.</p>
+                                
+                                <div class="test-progress">
+                                    <div class="test-progress-bar" id="skills-progress"></div>
+                                </div>
+                                
+                                <div id="skills-questions"></div>
+                                
+                                <button class="btn btn-primary test-button" id="skills-next">Далее</button>
+                                <button class="btn btn-success test-button" id="skills-submit" style="display: none;">Завершить тест</button>
+                            </div>
+                            
+                            <div class="result-container" id="skills-result">
+                                <h3 class="result-title">Результаты теста навыков</h3>
+                                <div id="skills-result-content"></div>
+                                <button class="btn btn-primary" id="skills-save-result">Сохранить результаты</button>
+                                <button class="btn btn-secondary" id="skills-restart">Пройти тест заново</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Saved Results -->
+                        <div class="tab-pane fade" id="saved-results" role="tabpanel">
+                            <div class="saved-results">
+                                <h3 class="mb-2">Ваши сохраненные результаты</h3>
+                                <p>Здесь отображаются результаты ранее пройденных тестов.</p>
+                                <div id="saved-results-list">
+                                    <p>У вас пока нет сохраненных результатов.</p>
+                                </div>
+                                <button class="btn btn-danger" id="clear-results">Очистить все результаты</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Tests Section -->
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <!-- Footer Top -->
+        <div class="footer-top overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <!-- About -->
+                        <div class="single-widget about">
+                            <h2>О нас</h2>
+                            <p>ПрофСтарт — платформа для развития карьеры молодых специалистов. Мы помогаем найти свой профессиональный путь и реализовать потенциал.</p>
+                            <ul class="list">
+                                <li><i class="fa fa-phone"></i>+7 (495) 123-45-67</li>
+                                <li><i class="fa fa-envelope"></i>info@profstart.ru</li>
+                                <li><i class="fa fa-map-o"></i>улица Университетская, дом 83А, г.о. Донецк, г. Донецк, 83048, ДНР.</li>
+                            </ul>
+                        </div>
+                        <!--/ End About -->
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12">
+                        <!-- Useful Links -->
+                        <div class="single-widget useful-links">
+                            <h2>Полезные ссылки</h2>
+                            <ul>
+                                <li><a href="index.html"><i class="fa fa-angle-right"></i>Главная</a></li>
+                                <li><a href="about.html"><i class="fa fa-angle-right"></i>О нас</a></li>
+                                <li><a href="events.html"><i class="fa fa-angle-right"></i>Мероприятия</a></li>
+                                <li><a href="tests.html"><i class="fa fa-angle-right"></i>Тесты</a></li>
+                                <li><a href="contact.html"><i class="fa fa-angle-right"></i>Контакты</a></li>
+                            </ul>
+                        </div>
+                        <!--/ End Useful Links -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- Newsletter -->
+                        <div class="single-widget newsletter">
+                            <h2>Подписка на новости</h2>
+                            <p>Подпишитесь на нашу рассылку, чтобы получать информацию о новых мероприятиях и возможностях</p>
+                            <form action="#" method="post" class="newsletter-form">
+                                <div class="input-group">
+                                    <div class="input-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input type="email" placeholder="Ваш email" name="email" class="form-control">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary">Подписаться <i class="fa fa-paper-plane ml-2"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--/ End Newsletter -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            <p>© 2023 ПрофСтарт. Все права защищены.</p>
+                        </div>
+                        <!--/ End Copyright -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Bottom -->
+    </footer>
+    <!--/ End Footer -->
+
+    <!-- Jquery JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Modernizr JS -->
+    <script src="js/modernizr.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/scrollup.js"></script>
+    <!-- FacnyBox JS -->
+    <script src="js/jquery-fancybox.min.js"></script>
+    <!-- Cube Portfolio JS -->
+    <script src="js/cubeportfolio.min.js"></script>
+    <!-- Slick Nav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Magnipic Popup JS -->
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+    
+    <!-- Tests JS -->
+    <script src="js/tests.js"></script>
+</body>
+</html>
