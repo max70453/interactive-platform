@@ -1,0 +1,105 @@
+/* Partners Section Styles */
+.partners-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.partners-section .section-title {
+    margin-bottom: 50px;
+}
+
+.partner-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.partner-logo {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.partner-logo img {
+    max-height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для иконок в карточках карьерных советов */
+.career-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.career-icon i {
+    color: #2273f8;
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover .career-icon {
+    background-color: #2273f8;
+}
+
+.partner-card:hover .career-icon i {
+    color: #fff;
+}
+
+.partner-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #252525;
+}
+
+.partner-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 767px) {
+    .partners-section {
+        padding: 50px 0;
+    }
+    
+    .partner-card {
+        padding: 15px;
+    }
+    
+    .partner-logo {
+        height: 80px;
+    }
+    
+    .partner-logo img {
+        max-height: 60px;
+    }
+}

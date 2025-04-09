@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+		<title>Контакты - ПрофСтарт</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		
+		<!-- Web Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Nice Select CSS -->
+        <link rel="stylesheet" href="css/niceselect.css">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/cube-portfolio.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        <!-- Magnific Popup -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Eduland Stylesheet -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+		<!-- Eduland Colors -->
+		<link rel="stylesheet" href="css/colors/color1.css">
+		<!-- Partners CSS -->
+		<link rel="stylesheet" href="css/partners.css">
+		<!-- Newsletter CSS -->
+		<link rel="stylesheet" href="css/newsletter.css">
+		
+		<style>
+			/* Стили для страницы контактов */
+			.contact-form-wrapper {
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+				padding: 30px;
+				margin-bottom: 30px;
+			}
+			
+			.contact-form-wrapper h4 {
+				margin-bottom: 20px;
+				color: #252525;
+				font-weight: 600;
+			}
+			
+			.contact-form .form-group {
+				margin-bottom: 20px;
+			}
+			
+			.contact-form .form-control {
+				height: 50px;
+				border: 1px solid #e6e6e6;
+				border-radius: 4px;
+				padding: 10px 15px;
+				font-size: 14px;
+				transition: all 0.3s ease;
+			}
+			
+			.contact-form textarea.form-control {
+				height: 150px;
+				resize: none;
+			}
+			
+			.contact-form .form-control:focus {
+				border-color: #2273f8;
+				box-shadow: 0 0 10px rgba(34, 115, 248, 0.1);
+			}
+			
+			.contact-form .btn {
+				background: #2273f8;
+				color: #fff;
+				border: none;
+				padding: 12px 30px;
+				border-radius: 4px;
+				font-weight: 500;
+				transition: all 0.3s ease;
+			}
+			
+			.contact-form .btn:hover {
+				background: #1a5dc8;
+			}
+			
+			.contact-info-wrapper {
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+				padding: 30px;
+				height: 100%;
+			}
+			
+			.contact-info-item {
+				margin-bottom: 25px;
+				display: flex;
+				align-items: flex-start;
+			}
+			
+			.contact-info-icon {
+				width: 50px;
+				height: 50px;
+				background: #f5f5f5;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 15px;
+				transition: all 0.3s ease;
+			}
+			
+			.contact-info-icon i {
+				color: #2273f8;
+				font-size: 20px;
+			}
+			
+			.contact-info-content h5 {
+				font-size: 16px;
+				margin-bottom: 5px;
+				color: #252525;
+			}
+			
+			.contact-info-content p {
+				margin: 0;
+				color: #666;
+				font-size: 14px;
+			}
+			
+			.social-links {
+				margin-top: 30px;
+			}
+			
+			.social-links h5 {
+				margin-bottom: 15px;
+				color: #252525;
+			}
+			
+			.social-links a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 40px;
+				height: 40px;
+				background: #f5f5f5;
+				border-radius: 50%;
+				margin-right: 10px;
+				transition: all 0.3s ease;
+			}
+			
+			.social-links a i {
+				color: #2273f8;
+				font-size: 18px;
+			}
+			
+			.social-links a:hover {
+				background: #2273f8;
+			}
+			
+			.social-links a:hover i {
+				color: #fff;
+			}
+			
+			.breadcrumbs {
+				background-image: url('images/breadcrumb-bg.jpg');
+				background-size: cover;
+				background-position: center;
+				padding: 80px 0;
+				position: relative;
+				z-index: 1;
+				text-align: center;
+			}
+			
+			.breadcrumbs::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.6);
+				z-index: -1;
+			}
+			
+			.breadcrumbs h2 {
+				color: #fff;
+				font-size: 36px;
+				margin-bottom: 10px;
+			}
+			
+			.breadcrumbs ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.breadcrumbs ul li {
+				display: inline-block;
+				color: #fff;
+				font-size: 14px;
+				margin-right: 5px;
+			}
+			
+			.breadcrumbs ul li a {
+				color: #fff;
+			}
+			
+			.breadcrumbs ul li a:hover {
+				color: #2273f8;
+			}
+			
+			.breadcrumbs ul li:after {
+				content: '/';
+				margin-left: 5px;
+			}
+			
+			.breadcrumbs ul li:last-child:after {
+				display: none;
+			}
+			
+			.form-message {
+				margin-top: 10px;
+				padding: 10px 15px;
+				border-radius: 4px;
+				display: none;
+			}
+			
+			.form-message.success {
+				background: #d4edda;
+				color: #155724;
+				border: 1px solid #c3e6cb;
+			}
+			
+			.form-message.error {
+				background: #f8d7da;
+				color: #721c24;
+				border: 1px solid #f5c6cb;
+			}
+		</style>
+    </head>
+    <body>
+	
+	<!-- Header -->
+	<header class="header">
+		<!-- Header Inner -->
+		<div class="header-inner overlay">
+			<div class="container">
+				<div class="row" style="display: flex; align-items: center;">
+					<div class="col-lg-3 col-md-3 col-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html" style="color: blue;"><img src="./images/logo-new.png" alt="#">ПрофСтарт</a>
+						</div>
+						<!--/ End Logo -->
+						<div class="mobile-menu"></div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-12">
+						<div class="menu-bar">
+							<nav class="navbar navbar-default">
+								<div class="navbar-collapse">
+									<!-- Main Menu -->
+									<ul id="nav" class="nav menu navbar-nav">
+										<li><a href="index.html"><i class="fa fa-home"></i>Главная</a></li>
+										<li><a href="events.html"><i class="fa fa-clone"></i>Мероприятия</a></li>
+										<li><a href="about.html"><i class="fa fa-info-circle"></i>О нас</a></li>
+										<li class="active"><a href="contact.html"><i class="fa fa-address-book"></i>Контакты</a></li>
+									</ul>
+									<!-- End Main Menu -->
+								</div> 
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs" style="padding-top: 200px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Свяжитесь с нами</h2>
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li>Контакты</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Breadcrumbs -->
+	
+	<!-- Contact Section -->
+	<section class="contact-section section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 offset-lg-12 col-sm-12 mb-5">
+					<div class="section-title bg">
+						<h2>Контактная информация</h2>
+						<p>Свяжитесь с нами любым удобным способом</p>
+						<div class="icon"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Contact Form -->
+				<div class="col-lg-7 col-md-7 col-12">
+					<div class="contact-form-wrapper">
+						<h4>Отправьте нам сообщение</h4>
+						<form class="contact-form" id="contact-form">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input type="email" name="email" class="form-control" placeholder="Ваш Email" required>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<input type="text" name="subject" class="form-control" placeholder="Тема сообщения" required>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<textarea name="message" class="form-control" placeholder="Ваше сообщение" required></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group button">
+										<button type="submit" class="btn">Отправить сообщение</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-message"></div>
+						</form>
+					</div>
+				</div>
+				<!-- Contact Information -->
+				<div class="col-lg-5 col-md-5 col-12">
+					<div class="contact-info-wrapper">
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<div class="contact-info-content">
+								<h5>Email</h5>
+								<p>info@profstart.ru</p>
+								<p>support@profstart.ru</p>
+							</div>
+						</div>
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="fa fa-phone"></i>
+							</div>
+							<div class="contact-info-content">
+								<h5>Телефон</h5>
+								<p>+7 (495) 123-45-67</p>
+								<p>+7 (499) 765-43-21</p>
+							</div>
+						</div>
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="contact-info-content">
+								<h5>Адрес</h5>
+								<p>улица Университетская, дом 83А, г.о. Донецк, г. Донецк, 83048, ДНР.</p>
+							</div>
+						</div>
+						<div class="social-links">
+							<h5>Мы в социальных сетях</h5>
+							<a href="#"><i class="fa fa-vk"></i></a>
+							<a href="#"><i class="fa fa-telegram"></i></a>
+							<a href="#"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Contact Section -->
+
+		<!-- Footer -->
+		<footer class="footer section">
+			<!-- Footer Top -->
+			<div class="footer-top overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<!-- About -->
+							<div class="single-widget about">
+								<h2>О нас</h2>
+								<p>ПрофСтарт — платформа для развития карьеры молодых специалистов. Мы помогаем найти свой профессиональный путь и реализовать потенциал.</p>
+								<ul class="list">
+									<li><i class="fa fa-phone"></i>+7 (495) 123-45-67</li>
+									<li><i class="fa fa-envelope"></i>info@profstart.ru</li>
+									<li><i class="fa fa-map-o"></i>улица Университетская, дом 83А, г.о. Донецк, г. Донецк, 83048, ДНР.</li>
+								</ul>
+							</div>
+							<!--/ End About -->
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-12">
+							<!-- Useful Links -->
+							<div class="single-widget useful-links">
+								<h2>Полезные ссылки</h2>
+								<ul>
+									<li><a href="index.html"><i class="fa fa-angle-right"></i>Главная</a></li>
+									<li><a href="about.html"><i class="fa fa-angle-right"></i>О нас</a></li>
+									<li><a href="events.html"><i class="fa fa-angle-right"></i>Мероприятия</a></li>
+									<li><a href="contact.html"><i class="fa fa-angle-right"></i>Контакты</a></li>
+								</ul>
+							</div>
+							<!--/ End Useful Links -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<!-- Newsletter -->
+							<div class="single-widget newsletter">
+								<h2>Подписка на новости</h2>
+								<p>Подпишитесь на нашу рассылку, чтобы получать информацию о новых мероприятиях и возможностях</p>
+								<form action="#" method="post" class="newsletter-form">
+									<div class="input-group">
+										<div class="input-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<input type="email" placeholder="Ваш email" name="email" class="form-control">
+										<div class="input-group-append">
+											<button type="submit" class="btn btn-primary">Подписаться <i class="fa fa-paper-plane ml-2"></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!--/ End Newsletter -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="bottom-head">
+								<div class="row">
+									<div class="col-12">
+										<!-- Copyright -->
+										<div class="copyright">
+											<p>© 2025 ПрофСтарт. Все права защищены.</p>
+										</div>
+										<!--/ End Copyright -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Bottom -->
+		</footer>
+		<!--/ End Footer -->
+		
+	
+	<!-- Jquery JS-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate.min.js"></script>
+	<!-- Colors JS-->
+	<script src="js/colors.js"></script>
+	<!-- Popper JS-->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS-->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel JS-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Jquery Steller JS -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Final Countdown JS -->
+	<script src="js/finalcountdown.min.js"></script>
+	<!-- Fancy Box JS-->
+	<script src="js/facnybox.min.js"></script>
+	<!-- Magnific Popup JS-->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Circle Progress JS -->
+	<script src="js/circle-progress.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="js/niceselect.js"></script>
+	<!-- Jquery Steller JS-->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Jquery Steller JS-->
+	<script src="js/cube-portfolio.min.js"></script>
+	<!-- Slick Nav JS-->
+	<script src="js/slicknav.min.js"></script>
+	<!-- Easing JS-->
+	<script src="js/easing.min.js"></script>
+	<!-- Waypoints JS-->
+	<script src="js/waypoints.min.js"></script>
+	<!-- Counter Up JS -->
+	<script src="js/jquery.counterup.min.js"></script>
+	<!-- Scroll Up JS-->
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<!-- Main JS-->
+	<script src="js/main.js"></script>
+	
+	<!-- Скрипт для обработки формы -->
+	<script>
+		$(document).ready(function() {
+			$('#contact-form').on('submit', function(e) {
+				e.preventDefault();
+				
+				// Получаем данные формы
+				var formData = {
+					name: $('input[name="name"]').val(),
+					email: $('input[name="email"]').val(),
+					subject: $('input[name="subject"]').val(),
+					message: $('textarea[name="message"]').val()
+				};
+				
+				// В реальном проекте здесь был бы AJAX запрос для отправки данных на сервер
+				// $.ajax({ ... });
+				
+				// Имитация успешной отправки
+				setTimeout(function() {
+					// Очищаем форму
+					$('#contact-form')[0].reset();
+					
+					// Показываем сообщение об успешной отправке
+					$('.form-message').removeClass('error').addClass('success').html('Ваше сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.').fadeIn();
+					
+					// Скрываем сообщение через 5 секунд
+					setTimeout(function() {
+						$('.form-message').fadeOut();
+					}, 5000);
+				}, 1000);
+			});
+		});
+	</script>
+</body>
+</html>

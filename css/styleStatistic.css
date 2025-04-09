@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Forum");
+.polygon {
+  fill: #61b543;
+  opacity: 0.6;
+  transform: translateY(-15px); }
+
+.area {
+  opacity: 0.8;
+  stroke: none;
+  transform: skewY(-19.75deg); }
+
+.label {
+  font-family: "Forum", serif; }
+
+#label-2021 {
+  transform: translate(-18px, 148px) skewY(-19.5deg); }
+
+#label-2022 {
+  transform: translate(-18px, 118px) skewY(-19.5deg); }
+
+#label-2023 {
+  transform: translate(-18px, 88px) skewY(-19.5deg); }
+
+.main-text {
+  font-family: "Forum", serif;
+  font-size: 0.8rem; }
+  .main-text tspan {
+    pointer-events: none; }
+
+#main-text-2021 {
+  transform: skewY(-19.5deg) translate(30px, -100px);
+  fill: #D5EDFB; }
+  #main-text-2021 a {
+    cursor: pointer; }
+
+#main-text-2022 {
+  transform: skewY(-19.5deg) translate(30px, -170px);
+  fill: #fafafa; }
+
+#main-text-2023 {
+  transform: skewY(-19.5deg) translate(30px, -220px);
+  fill: #fafafa; }
+
+.link-in-text {
+  fill: #26BCED; }
+  .link-in-text:hover {
+    fill: #F96D6F;
+    cursor: pointer; }
+
+.link-in-text-2022 {
+  fill: #26BCED; }
+  .link-in-text-2022:hover {
+    fill: #1C2538;
+    /*cursor: pointer;*/ }
+
+.title-in-text {
+  font-size: large;
+  font-weight: bold;
+}
+
+#top-area {
+  fill: #3124F9; }
+
+#middle-area {
+  fill: #F96D6F; }
+
+#bottom-area {
+  fill: #1C2538; }
+
+.colophon-text {
+  font-family: "Forum", serif;
+  font-size: 0.6rem; }
